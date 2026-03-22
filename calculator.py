@@ -15,6 +15,8 @@ class Calculator:
         return a / b
 
     def square_root(self, x):
+        if x < 0:
+            raise ValueError("Cannot calculate square root of negative number.")
         return math.sqrt(x)
 
 
